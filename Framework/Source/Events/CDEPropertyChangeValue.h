@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, CDEPropertyChangeType) {
 
 @class CDEEventStore;
 
-@interface CDEPropertyChangeValue : NSObject <NSCoding>
+@interface CDEPropertyChangeValue : NSObject <NSCoding, NSSecureCoding>
 
 @property (nonatomic, assign, readonly) CDEPropertyChangeType type;
 @property (nonatomic, strong, readonly) NSString *propertyName;

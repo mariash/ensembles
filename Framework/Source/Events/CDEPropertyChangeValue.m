@@ -72,6 +72,10 @@
 
 #pragma mark NSCoding
 
++ (BOOL)supportsSecureCoding {
+  return YES;
+}
+
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super init];
